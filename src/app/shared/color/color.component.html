@@ -1,1 +1,5 @@
-<p>color works!</p>
+<div class="colored" [style.backgroundColor]="color">
+    <!-- <div class="copy" *ngIf="showCopyOption">COPY</div> -->
+    <input type="text" [value]="color" #colorCode>
+    <img src="./assets/images/copy.png" (click)="copyColor(colorCode)" alt="copy" title="copy to clipboard">
+</div>

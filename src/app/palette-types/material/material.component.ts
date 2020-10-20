@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as materialJson from './../../../assets/json/material.json';
 
 @Component({
   selector: 'app-material',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MaterialComponent implements OnInit {
 
+  materialColors = (materialJson as any).default;
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }
